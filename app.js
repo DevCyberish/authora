@@ -6,7 +6,7 @@ const config = require('./config.json');
 
 client.on("ready", () => {
   console.log(chalk.blue("HI"));
-  client.user.setActivity('over the network', { type: 'WATCHING' })
+  client.user.setActivity('over authora', { type: 'WATCHING' })
 });
 
 client.on("message", async message => {
