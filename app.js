@@ -12,6 +12,9 @@ client.on("ready", () => {
 client.on("message", async message => {
 
   let prefix = config.prefix;
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
 
   if(message.content === prefix + "settings") {
     let embed = new Discord.RichEmbed()
