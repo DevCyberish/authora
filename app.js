@@ -24,14 +24,6 @@ client.on("message", async message => {
 
     message.channel.send(embed);
   }
-  
-  if(message.content === prefix + "prune") {
-      if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("No.");
-        if(!args[0]) return message.channel.send(`Invalid syntax, **${prefix}prune** <amount>`);
-    message.channel.bulkDelete(args[0]).then(() => {
-      message.channel.send(`Sucessfully prunted ${args[0]} messages`)
-    });
-  }
 
 });
 client.login(process.env.token);
