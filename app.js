@@ -17,11 +17,9 @@ client.on("message", async message => {
     let embed = new Discord.RichEmbed()
       .setColor(0x00FFFF)
       .setAuthor(client.user.username, client.user.displayAvatarURL)
-      .setFooter(message.author.username, message.author.displayAvatarURL)
-      .addField('Prefix', '**a!**');
+      .setFooter(message.author.username, message.author.displayAvatarURL);
 
     message.channel.send(embed);
-    console.log("settings command has used");
   }
 
 });
