@@ -46,7 +46,7 @@ client.on("message", async message => {
      .addField(prefix+'logo', "Display the server's logo")
      .addField(prefix+'hcf', "Display hcf community's information")
      .addField(prefix+'vynox', "Display vynox's information")
-     .setFooter(client.user.username. client.user.displayAvatarURL);
+     .setFooter(client.user.username, client.user.displayAvatarURL);
    message.channel.send(embed);
   }
   
