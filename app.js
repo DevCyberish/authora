@@ -39,6 +39,16 @@ client.on("message", async message => {
     message.channel.send(embed)
   }
   
+  if(message.content === prefix+"help") {
+   let embed = new Discord.RichEmbed()
+     .setThumbnail(client.user.displayAvatarURL)
+     .setColor(0x00FFFF)
+     .addField(prefix+'logo', "Display the server's logo")
+     .addField(prefix+'hcf', "Display hcf community's information")
+     .addField(prefix+'vynox', "Display vynox's information")
+   message.channel.send(embed);
+  }
+  
   client.on('guildMemberAdd', (guildMember) => {
    guildMember.addRole(guildMember.guild.roles.find(role => role.name === "Member"));
   });
