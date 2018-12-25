@@ -25,7 +25,7 @@ client.on("message", async message => {
   
   if(message.content === prefix + "vynox") {
      let embed = new Discord.RichEmbed()
-      .setThumbnail('https://cdn.discordapp.com/attachments/514395518340825089/526093235492356096/image0.png')
+      .setThumbnail('https://cdn.discordapp.com/attachments/519249071215738887/526923530496114718/image0.png')
       .setColor(0x00FFFF)
       .addField('Status', 'Sister');
      message.channel.send(embed);
