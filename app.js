@@ -33,7 +33,7 @@ client.on("message", async message => {
   
   if(message.content === prefix + "hcf" || message.content === prefix + "hc" || message.content === prefix + "hcfcommunity" || message.content === prefix + "hccommunity") {
     let embed = new Discord.RichEmbed()
-     .setThumbnail('https://cdn.discordapp.com/icons/526504750720745504/c88db6558f7f3fd6e8d91b767e10aae9.webp')
+     .setThumbnail('https://cdn.discordapp.com/icons/526847900286976011/ea8b1cd20fcf85566a542924df9c23ee.webp')
      .setColor(0x00FFFF)
      .addField('Status', 'Partnered');
     message.channel.send(embed)
