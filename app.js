@@ -38,6 +38,10 @@ client.on("message", async message => {
      .addField('Status', 'Partnered');
     message.channel.send(embed)
   }
+  
+  client.on('guildMemberAdd', (guildMember) => {
+   guildMember.addRole(guildMember.guild.roles.find(role => role.name === "Member"));
+  });
 
 });
 client.login(process.env.token);
