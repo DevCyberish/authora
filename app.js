@@ -61,7 +61,7 @@ client.on("message", async message => {
   
   client.on('guildMemberAdd', (guildMember) => {
    guildMember.addRole(guildMember.guild.roles.find(role => role.name === "Member"));
-   let channel = message.channel.get("527525346417836042");
+   let channel = client.channels.get("527525346417836042");
     if(!message.author.bot) {
       channel.sendMessage('Welcome, **<@'+guildMember.user.id+'>**')
       channel.sendMessage(' Authora, is an minigames server, that will provide')
