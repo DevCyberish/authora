@@ -20,7 +20,9 @@ client.on("message", async message => {
       .setColor(0x00FFFF)
       .setImage(client.user.displayAvatarURL);
 
-    message.channel.send(embed);
+    if(message.channel.id == '527196584530673664' || message.author.id == '366283647587713034' || message.author.id == '506533999318007810') {
+     message.channel.send(embed);
+    }
   }
   
   if(message.content === prefix + "vynox") {
@@ -28,7 +30,9 @@ client.on("message", async message => {
       .setThumbnail('https://cdn.discordapp.com/attachments/519249071215738887/526923530496114718/image0.png')
       .setColor(0x00FFFF)
       .addField('Status', 'Sister');
+    if(message.channel.id == '527196584530673664' || message.author.id == '366283647587713034' || message.author.id == '506533999318007810') {
      message.channel.send(embed);
+    }
   }
   
   if(message.content === prefix + "hcf" || message.content === prefix + "hc" || message.content === prefix + "hcfcommunity" || message.content === prefix + "hccommunity") {
@@ -36,7 +40,9 @@ client.on("message", async message => {
      .setThumbnail('https://cdn.discordapp.com/icons/526847900286976011/ea8b1cd20fcf85566a542924df9c23ee.webp')
      .setColor(0x00FFFF)
      .addField('Status', 'Partnered');
-    message.channel.send(embed)
+    if(message.channel.id == '527196584530673664' || message.author.id == '366283647587713034' || message.author.id == '506533999318007810') {
+     message.channel.send(embed);
+    }
   }
   
   if(message.content === prefix+"help") {
@@ -48,7 +54,9 @@ client.on("message", async message => {
      .addField(prefix+'vynox', "Display vynox's information")
      .setFooter(client.user.username, client.user.displayAvatarURL)
      .setAuthor(message.author.username, message.author.displayAvatarURL);
-   message.channel.send(embed);
+    if(message.channel.id == '527196584530673664' || message.author.id == '366283647587713034' || message.author.id == '506533999318007810') {
+     message.channel.send(embed);
+    }
   }
   
   client.on('guildMemberAdd', (guildMember) => {
