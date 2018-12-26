@@ -54,14 +54,6 @@ client.on("message", async message => {
   client.on('guildMemberAdd', (guildMember) => {
    guildMember.addRole(guildMember.guild.roles.find(role => role.name === "Member"));
   });
-  
-  if(message.content.includes('Staff | Updates')) {
-     if(message.author.id != '506533999318007810' || message.author.id !=) {
-      message.react('🎉')
-      let user = message.mentions.members.first();
-      user.sendMessage('Congratulations 🎉')
-     }
-  }
 
 });
 client.login(process.env.token);
